@@ -1,20 +1,20 @@
 {
   lib,
-  buildGoModule,
+  buildGo124Module,
   fetchFromGitHub,
 }:
-buildGoModule rec {
+buildGo124Module rec {
   pname = "atmos";
-  version = "1.167.0";
+  version = "1.170.0";
 
   src = fetchFromGitHub {
     owner = "cloudposse";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-CcRMnn4PRC70sp0viEG79ZErGR46GMPs6R9Xgj4Quak=";
+    sha256 = "sha256-yCTi5/N37FDBUP4IqtSSFSaEsXMNrR+uQRVGB92GaLA=";
   };
 
-  vendorHash = "sha256-7STPMi1Oo1FLmCc22PUcnBL7CauLS9Wywk8gtSaEShc=";
+  vendorHash = "sha256-5gztFFZd0L5Zgc7whw44d14eXLIbvILXQFEj6AHaVfI=";
 
   ldflags = [
     "-s"
