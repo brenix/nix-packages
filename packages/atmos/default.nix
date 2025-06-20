@@ -5,16 +5,16 @@
 }:
 buildGo124Module rec {
   pname = "atmos";
-  version = "1.174.0";
+  version = "1.180.0";
 
   src = fetchFromGitHub {
     owner = "cloudposse";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-lkU4g+CMT3Dob7dG5iaX82FZ6oWIEkCnL+RrZ+JRmFM=";
+    sha256 = "sha256-/yCgC73J4PVTqmJBW0eLCMVWtsyMGLeF0Rmvx+N/oP8=";
   };
 
-  vendorHash = "sha256-0VtuRtvof360vH3SK3TzV4S44owSqn7n2J/aV7/KIJI=";
+  vendorHash = "sha256-k1zC3tUF2uDAo86J6dZmYOGZcYFBNdSH15cyX2tiZEg=";
 
   ldflags = [
     "-s"
